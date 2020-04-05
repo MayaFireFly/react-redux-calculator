@@ -1,0 +1,40 @@
+.Button{
+    display: block;
+    background-color: var(--fontColor);
+    color:var(--bgColor);
+    border: 2px solid var(--bgColor);
+    min-height: 4em;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;    
+}
+.Button_padding-top{
+    padding-top: 1.5em;
+}
+.Button_border-left-top{
+    border-radius: 5px 0 0 0;
+}
+.Button_border-right-top{
+    border-radius: 0 5px 0 0;
+}
+.Button_border-left-bottom{
+    border-radius: 0 0 0 5px;
+}
+.Button_border-right-bottom{
+    border-radius: 0 0 5px 0;
+}
+.Button_decimal-padding{
+    padding-top: 1em;
+}
+.Button__equals{
+    background-color: var(--blueColor);
+}
+.Button__controls{
+    background-color: var(--pinkColor);
+}
+.Button_active{
+    background-color: var(--blueColor);
+}
+.Button_active_equals{
+    background-color: red;
+}

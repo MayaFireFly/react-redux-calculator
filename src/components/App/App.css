@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+  --fontColor: #F0E6F6;
+  --bgColor: #3C3845;
+  --lightColor: #FDE2FF;
+  --blueColor: #8884FF;
+  --pinkColor: #E8CEE4;  
+}
+.App{  
+  background-color: var(--bgColor);
+  color: var(--fontColor);
+  margin:1em auto auto; 
+  width:20em;
+  padding: 1em; 
+}
+.App_border{
+  border:2px solid var(--fontColor);
+  border-radius: 10px;
+}
+.App__row{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+}
+.App__row_center{  
+  justify-content: center;
+  align-items: center;
+}
+.App__col{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.App__col_w-100{
+  width:100%;
+}
+.App__col_w-50{
+  width:50%;
+}
+.App__col_w-25{
+  width:25%;
+}
+.App__error{
+  width: 100%;
+  text-align: center;  
+  color: red;
+}
