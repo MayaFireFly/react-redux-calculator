@@ -1,6 +1,7 @@
 const initialState = {
   btn:'0',
-  expression:''
+  expression:'',
+  result: 0
 };
 
 const reducer = (state = initialState, action) => {
@@ -8,7 +9,13 @@ const reducer = (state = initialState, action) => {
   case 'ACTIVE':      
     return Object.assign({}, state, {btn:action.btn});
   case 'EXPR':
-    return Object.assign({}, state, {expression:state.expression + action.expr});             
+    if(action.expr == 'C'){
+      return Object.assign({}, state, {expression:''});
+    }else{
+      return Object.assign({}, state, {expression:state.expression + action.expr});
+    }
+  case 'RESULT':
+    return Object.assign({}, state, {result:action.result});                
   default:
     return state;
   }

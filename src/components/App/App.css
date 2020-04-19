@@ -1,4 +1,17 @@
+/* aldrich-regular - latin */
+@font-face {
+  font-family: 'Aldrich';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/aldrich-v10-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Aldrich Regular'), local('Aldrich-Regular'),
+       url('../../fonts/aldrich-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/aldrich-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/aldrich-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/aldrich-v10-latin-regular.ttf') format('truetype'); /* Safari, Android, iOS */       
+}
 *{
+  font-family: 'Aldrich', sans-serif;
   box-sizing: border-box;
   --fontColor: #F0E6F6;
   --bgColor: #3C3845;

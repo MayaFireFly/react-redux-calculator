@@ -1,12 +1,9 @@
 .Display{
-    width: 15em;
-    height: 3em;
-    background-color: var(--blueColor);
-    color: var(--fontColor);
-    font-size: larger;
-    font-weight: bolder;
+    width: 100%;
+    height: 2.5em;
+    background-color: var(--bgColor);
+    color: var(--lightColor);    
     text-align: right;
     padding-top: 1em;
-    border:2px solid var(--bgColor);
-    border-radius: 5px;
+    border:2px solid var(--bgColor);    
 }

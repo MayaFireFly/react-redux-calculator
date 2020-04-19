@@ -1,0 +1,11 @@
+.DisplayResult{
+    width: 100%;
+    height: 3.5em;
+    background-color: var(--pinkColor);
+    color: var(--bgColor);    
+    text-align: right;
+    padding-top: 1em;
+    border:2px solid var(--bgColor);
+    border-radius: 5px;
+    padding-right: 1em;
+}

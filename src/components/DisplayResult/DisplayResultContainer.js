@@ -1,10 +1,9 @@
 import {connect} from 'react-redux';
-import Button from './Button';
+import DisplayResult from './DisplayResult';
 
-const setActiveBtn = (btn) => {
+const mapStateToProps = (state) => {
   return {
-    type:'ACTIVE',
-    btn:btn
+    data:state
   };
 };
 
@@ -15,20 +14,18 @@ const setExpression = (expr) => {
   };
 };
 
-
 const setResult = (value) => {
   return {
     type:'RESULT',
     result:value
   };
 };
-  
+    
 const mapDispatchToProps = (dispatch) => {
-  return {
-    btnAction: (btn)=>dispatch(setActiveBtn(btn)),
+  return {    
     btnExpr: (expr)=>dispatch(setExpression(expr)),
     setResult: (value)=>dispatch(setResult(value))
   };
 };
 
-export default connect(null, mapDispatchToProps)(Button);
+export default connect(mapStateToProps, mapDispatchToProps)(DisplayResult);

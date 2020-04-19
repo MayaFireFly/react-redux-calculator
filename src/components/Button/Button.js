@@ -7,6 +7,7 @@ const Button = (props) => {
   const btnAction = props.btnAction;
   const btnExpr = props.btnExpr;
   const btnId = props.id;
+  const setResult = props.setResult;
   const [classname, setClassname] = useState(['Button']);
 
   useEffect(
@@ -50,9 +51,10 @@ const Button = (props) => {
     []
   );
   
-  const clickButton = (btn) => {
+  const clickButton = (btn) => {    
     btnAction(btnTitle);
     btnExpr(btnTitle);
+    if(btnTitle == 'C') setResult(0);
     if(btn.classList.contains('Button__equals')){
       btn.classList.add('Button_active_equals');
       setTimeout(() => {
@@ -63,7 +65,8 @@ const Button = (props) => {
       setTimeout(() => {
         btn.classList.remove('Button_active');
       }, 150);
-    }    
+    }
+           
   };
   
   return <div className={classname.join(' ').toString()} id={btnId} onClick={(e)=>clickButton(e.target)}>

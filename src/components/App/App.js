@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import {Provider} from 'react-redux';
 import Button from '../Button/ButtonContainer';
 import Display from '../Display/DisplayContainer';
+import DisplayResult from '../DisplayResult/DisplayResultContainer';
 
 class App extends React.Component{
   constructor(props){
@@ -13,9 +14,16 @@ class App extends React.Component{
     return <Provider store={this.props.store}>
       <div className='App App__col App_border App__row_center'>
         
-        <div id='display' className='App__col App__col_w-100'>
+        <div className='App__col App__col_w-100'>
+          <div className='App__row' id='display'>
+            <div className='App__col App__col_w-100'>
+              <DisplayResult/>
+            </div>            
+          </div>
           <div className='App__row'>
-            <Display/>
+            <div className='App__col App__col_w-100'>
+              <Display/>
+            </div>            
           </div>
         </div>        
 
